@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Fund Sanction</title>
+  <link rel="stylesheet" href="styles/sanctionFund.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">💰 Government Fund Transfer</div>
+    <div class="select-role"><a href="#">Select Role</a></div>
+  </header>
+  
+  <main class="container">
+    <h1>In Government Body</h1>
+    <div class="fund-info">
+      <h2>Total Allocated Funds: <span id="total-funds">500000</span></h2>
+      <h2>Remaining Balance in Your Account: <span id="remaining-balance">500000</span></h2>
+    </div>
+    
+    <div class="sanction-form">
+      <div class="form-group">
+        <label for="receiver">Receiver:</label>
+        <select id="receiver">
+          <option value="" disabled selected>Choose the Receiver</option>
+          <option value="Central">Central</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="project-name">Project Name:</label>
+        <input type="text" id="project-name" placeholder="Enter Project Name">
+      </div>
+      
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter Sanction Amount">
+      </div>
+      
+      <button id="sanction-btn">Sanction Funds</button>
+    </div>
+    
+    <table class="fund-table">
+      <thead>
+        <tr>
+          <th>Time-Stamp</th>
+          <th>Sanctioned Projects</th>
+          <th>Sanctioned Government</th>
+          <th>Amount Sanctioned</th>
+        </tr>
+      </thead>
+      <tbody id="sanction-list"></tbody>
+    </table>
+  </main>
+  
+  <script src="sanctionFund.js"></script>
+</body>
+</html>

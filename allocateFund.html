@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Fund Transfer</title>
+  <link rel="stylesheet" href="styles/allocateFund.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">💰 Government Fund Transfer</div>
+    <div class="select-role"><a href="#">Select Role</a></div>
+  </header>
+  
+  <main class="container">
+    <h1>Allocate Funds</h1>
+    <div class="allocate-form">
+      <label for="funds">Funds:</label>
+      <input type="number" id="funds" placeholder="Enter amount" />
+      <button id="allocate-btn">Allocate Funds</button>
+    </div>
+    
+    <div class="allocated-funds">
+      <h2>Total Allocated Funds: <span id="total-funds">0</span></h2>
+    </div>
+    
+    <table class="fund-table">
+      <thead>
+        <tr>
+          <th>Time-Stamp</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="fund-list"></tbody>
+    </table>
+  </main>
+  
+  <script src="allocateFund.js"></script>
+</body>
+</html>
